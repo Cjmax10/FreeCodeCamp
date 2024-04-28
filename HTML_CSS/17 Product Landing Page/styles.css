@@ -1,0 +1,165 @@
+:root {
+    --peach: #F5DAD2;
+    --pale-yellow: #FCFFE0;
+    --olive: #BACD92;
+    --green: #75A47F;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: var(--peach);
+}
+
+header .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: var(--peach);
+}
+
+header .nav-container .logo img {
+    width: 450px;
+}
+
+header .nav-container #nav-bar ul {
+    display: flex;
+}
+
+header .nav-container #nav-bar ul li {
+    margin: 20px 30px;
+}
+
+header .nav-container #nav-bar ul li .nav-link {
+    border: 1px solid var(--pale-yellow);
+    padding: 12px 30px;
+    border-radius: 40px;
+}
+
+header .nav-container #nav-bar ul li .nav-link:hover {
+    border: 1px solid var(--green);
+    background-color: var(--olive);
+    color: var(--pale-yellow);
+    padding: 12px 30px;
+    border-radius: 40px;
+}
+
+.spacing {
+    width: 100%;
+    height: 100px;
+}
+
+h2.title {
+    text-align: center;
+    font-size: 35px;
+}
+
+#form {
+    margin: 0 auto;
+    width: 500px;
+    padding: 25px 0;
+}
+
+#form #email {
+    padding: 10px;
+    width: 350px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+    display: block;
+
+}
+
+#form #submit {
+    display: block;
+    padding: 10px 35px;
+    margin: 30px auto;
+    border-radius: 15px;
+    border: 2px solid var(--green);
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.feature-group {
+    display: flex;
+    align-items: center;
+    margin: 35px 0;
+}
+
+.icon {
+    padding: 15px;
+    width: 100px;
+}
+
+iframe {
+    margin: 35px auto;
+    display: block;
+}
+
+#pricing {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#offer {
+    border: 2px solid var(--green);
+    border-radius: 15px;
+    text-align: center;
+}
+
+#offer h3 {
+    background-color: var(--olive);
+    padding: 10px;
+}
+
+#offer .price {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#offer p {
+    padding: 0 20px;
+    margin: 20px 0;
+}
+
+#offer .select {
+    padding: 5px 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    #pricing {
+        grid-template-columns: 1fr;
+    }
+}
